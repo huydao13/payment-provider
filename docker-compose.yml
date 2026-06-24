@@ -13,6 +13,8 @@ services:
     networks:
       - bridge-network
     restart: unless-stopped
+    labels:
+      - "dozzle.group=app"
 
 networks:
   bridge-network:
